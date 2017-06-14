@@ -4,7 +4,7 @@
   "run_list": [ 
     "role[workstation]",
     "recipe[rvm::user]",
-    "recipe[heroku::default]"
+    "recipe[heroku-toolbelt::default]"
   ],
   "default_attributes": {
     "rvm": {
