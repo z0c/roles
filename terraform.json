@@ -3,7 +3,8 @@
   "description": "Configures terraform",
   "run_list": [ 
     "role[workstation]",
-    "recipe[terraform::default]"
+    "recipe[terraform::default]",
+    "recipe[cloudcli]"
   ],
   "default_attributes": {
     "terraform": {
