@@ -1,0 +1,22 @@
+{
+  "name": "ruby",
+  "description": "Configures workstation for ruby development",
+  "run_list": [ 
+    "role[workstation]",
+    "recipe[rvm::user]",
+    "recipe[heroku::default]"
+  ],
+  "default_attributes": {
+    "rvm": {
+      "default_ruby": "ruby-2.2.5",
+      "rubies": [  
+          "2.2.5"
+      ],
+      "gems": [
+        {"name": "bundler"}
+      ]
+    }
+  },
+  "json_class": "Chef::Role",
+  "chef_type": "role"
+}
