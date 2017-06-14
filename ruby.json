@@ -8,13 +8,14 @@
   ],
   "default_attributes": {
     "rvm": {
-      "default_ruby": "ruby-2.2.5",
-      "rubies": [  
-          "2.2.5"
-      ],
-      "gems": [
-        {"name": "bundler"}
-      ]
+      "user_installs": [{
+        "user": "lubuntu",
+        "default_ruby": "ruby-2.2.5",
+        "rubies": [ "2.2.5" ],
+        "global_gems": [
+          {"name": "bundler"}
+        ]
+      }]
     }
   },
   "json_class": "Chef::Role",
