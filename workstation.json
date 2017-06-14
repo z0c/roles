@@ -4,17 +4,6 @@
   "run_list": [ 
     "recipe[beam-me-up::default]"
   ],
-  "default_attributes": {
-    "rvm": {
-      "default_ruby": "ruby-2.2.5",
-      "rubies": [  
-          "2.2.5"
-      ],
-      "gems": [
-        {"name": "bundler"}
-      ]
-    }
-  },
   "json_class": "Chef::Role",
   "chef_type": "role"
 }
