@@ -4,6 +4,7 @@
   "run_list": [ 
     "role[workstation]",
     "recipe[terraform::default]",
+    "recipe[beam-me-up::vim_terraform]",
     "recipe[cloudcli]"
   ],
   "default_attributes": {
